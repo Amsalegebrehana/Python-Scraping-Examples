@@ -6,12 +6,13 @@ def get_repos(language):
 
     url = f'https://api.github.com/search/repositories?q=language:{language}&sort=stars&order=desc'
 
+    # fetch
     res = requests.get(url)
 
     if res.status_code == 200:
+        # change response to json format
         data = res.json()
-        # print(data)
-        print("###########################")
+       
         for repo in data.get('items',[]):
             print(f"Repository: {repo['name']}")
             print(f"Description: {repo['description']}")
