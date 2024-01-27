@@ -35,3 +35,36 @@ def main():
 
 if __name__ == "__main__":
     main()
+# output
+'''
+    {
+  "name": "myfun1",
+  "args": [
+    {
+      "name": "arg1",
+      "value": 7
+    },
+    {
+      "name": "arg2",
+      "value": 8
+    },
+    {
+      "name": "arg3",
+      "value": {
+        "name": "myfun3",
+        "args": [
+          {
+            "name": "barg1",
+            "value": "one"
+          },
+          {
+            "name": "barg2",
+            "value": "two"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+'''
